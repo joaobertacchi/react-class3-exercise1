@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const ErrorMessage = (props) => (
 	(props.display
-		? <p>{props.message}</p>
+		? <p className='error'>{props.message}</p>
 		: ''
 	)
 )

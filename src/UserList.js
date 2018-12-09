@@ -23,7 +23,7 @@ class UserList extends Component {
 	return (
 		<div>
 			<h1>User list</h1>
-			<button onClick={this.handleShowGames}>{( this.state.showGames ? 'Hide the Number of Games Played' : 'Show the Number of Games Played')}</button>
+			<button className='smallButton' onClick={this.handleShowGames}>{( this.state.showGames ? 'Hide the Number of Games Played' : 'Show the Number of Games Played')}</button>
 			<ul>
 				{users.map(user => (
 					<User
