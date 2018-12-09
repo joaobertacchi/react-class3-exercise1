@@ -2,13 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const User = (props) => {
-	const {username, firstname, lastname, games} = props;
+	const {username, games} = props;
 	return (
 		<li>
-			<span>{username}</span>
-			<span>{firstname}</span>
-			<span>{lastname}</span>
-			<span>{games}</span>
+			<span>{username} played {(props.showGames ? games : '*')} games.</span>
 		</li>
     ); 
 }
